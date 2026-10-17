@@ -1,0 +1,397 @@
+.<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Andaleeb Dawar — Software Engineering Student</title>
+  <meta name="description" content="Portfolio of Andaleeb Dawar, a Software Engineering student at AWKUM building modern web applications." />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>" />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Shared SVG icons -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+    <symbol id="i-hand" viewBox="0 0 24 24"><path d="M18 11V6a2 2 0 0 0-4 0M14 10V4a2 2 0 0 0-4 0v2M10 10.5V6a2 2 0 0 0-4 0v8M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-6-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4M9 18c-4.51 2-5-2-7-2"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4zM22 2 11 13"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9z"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 2 10 5-10 5L2 7zM2 17l10 5 10-5M2 12l10 5 10-5"/></symbol>
+    <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5"/></symbol>
+    <symbol id="i-trend" viewBox="0 0 24 24"><path d="m22 7-8.5 8.5-5-5L2 17M16 7h6v6"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5zM6 12v5c3 2 9 2 12 0v-5"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></symbol>
+    <symbol id="i-quote" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M5 18h4l2-4V6H4v8h3zM14 18h4l2-4V6h-7v8h3z"/></symbol>
+    <symbol id="i-loader" viewBox="0 0 24 24"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.2 16.2l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.2 7.8l2.8-2.8"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-brief" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+    <symbol id="i-lines" viewBox="0 0 24 24"><path d="M4 8h16M4 16h16"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+
+    <symbol id="b-html" viewBox="0 0 24 24"><path fill="#e44d26" d="M4 3l1.6 17.5L12 22l6.4-1.5L20 3z"/><path fill="#f16529" d="M12 4.6v15.8l5-1.3 1.3-14.5z"/><text x="12" y="16.5" font-size="11" font-weight="800" fill="#fff" text-anchor="middle">5</text></symbol>
+    <symbol id="b-css" viewBox="0 0 24 24"><path fill="#1572b6" d="M4 3l1.6 17.5L12 22l6.4-1.5L20 3z"/><path fill="#33a9dc" d="M12 4.6v15.8l5-1.3 1.3-14.5z"/><text x="12" y="16.5" font-size="11" font-weight="800" fill="#fff" text-anchor="middle">3</text></symbol>
+    <symbol id="b-js" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="1" fill="#f7df1e"/><text x="20" y="19.6" font-size="9" font-weight="800" fill="#111" text-anchor="end">JS</text></symbol>
+    <symbol id="b-py" viewBox="0 0 24 24"><path fill="#3776ab" d="M12 3C8 3 8 4.8 8 6v2h4v1H6.5C4.5 9 3 10.5 3 13s1.5 4 3 4H8v-2.5C8 13 9 12 10.5 12h3c1.2 0 2-.9 2-2V6c0-1.5-1.5-3-3.5-3z"/><path fill="#ffd43b" d="M12 21c4 0 4-1.8 4-3v-2h-4v-1h5.5c2 0 3.5-1.5 3.5-4s-1.5-4-3-4H16v2.5c0 1.5-1 2.5-2.5 2.5h-3c-1.2 0-2 .9-2 2v4c0 1.5 1.5 3 3.5 3z"/><circle cx="9.7" cy="5.5" r=".8" fill="#fff"/><circle cx="14.3" cy="18.5" r=".8" fill="#fff"/></symbol>
+    <symbol id="b-react" viewBox="0 0 24 24"><g fill="none" stroke="#61dafb" stroke-width="1.3"><ellipse cx="12" cy="12" rx="10" ry="4"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/></g><circle cx="12" cy="12" r="1.7" fill="#61dafb"/></symbol>
+    <symbol id="b-next" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.4"/><text x="12" y="16.6" font-size="12" font-weight="700" fill="currentColor" text-anchor="middle">N</text></symbol>
+    <symbol id="b-tw" viewBox="0 0 24 24"><path fill="none" stroke="#38bdf8" stroke-width="2.2" stroke-linecap="round" d="M3 10c1.5-3 3.5-4 6-3 2 .8 3 3 6 3.2 2 .1 3.5-1 5-3.2M3 16.5c1.5-3 3.5-4 6-3 2 .8 3 3 6 3.2 2 .1 3.5-1 5-3.2"/></symbol>
+    <symbol id="b-node" viewBox="0 0 24 24"><path fill="none" stroke="#6cc24a" stroke-width="1.8" stroke-linejoin="round" d="M12 2l8.5 5v10L12 22l-8.5-5V7z"/><text x="12" y="15.2" font-size="7.5" font-weight="800" fill="#6cc24a" text-anchor="middle">JS</text></symbol>
+    <symbol id="b-ex" viewBox="0 0 24 24"><text x="12" y="17" font-size="15" font-weight="500" fill="currentColor" text-anchor="middle">ex</text></symbol>
+    <symbol id="b-mongo" viewBox="0 0 24 24"><path fill="#4fa94d" d="M12 2c.3 2.5 5 5 5 10.5 0 3.5-2 6-4.5 7V22h-1v-2.5c-2.5-1-4.5-3.5-4.5-7C7 7 11.7 4.5 12 2z"/></symbol>
+    <symbol id="b-vs" viewBox="0 0 24 24"><path fill="#29a3f0" d="M17 2l5 2.5v15L17 22 7 13.5l-3.5 2.6L2 15.4V8.6l1.5-.7L7 10.5zM17 7.2l-6.2 4.8 6.2 4.8z"/></symbol>
+  </svg>
+
+
+  <header class="nav">
+    <div class="wrap nav__in">
+      <a href="#home" class="logo" aria-label="Andaleeb Dawar, home">AD</a>
+
+      <nav class="nav__links" id="menu" aria-label="Primary navigation">
+        <a href="#home" class="active" aria-current="location">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle light and dark theme">
+          <svg class="ic moon"><use href="#i-moon"/></svg>
+          <svg class="ic sun"><use href="#i-sun"/></svg>
+        </button>
+
+        <a href="#contact" class="btn btn--blue btn--sm">Hire Me <svg class="ic"><use href="#i-send"/></svg></a>
+
+        <button class="icon-btn burger" id="burger" aria-label="Toggle menu" aria-controls="menu" aria-expanded="false">
+          <svg class="ic"><use href="#i-menu"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="wrap hero" id="home">
+
+      <div>
+        <p class="hello rise" style="--d:0"><svg class="ic"><use href="#i-hand"/></svg>Hello, I'm</p>
+        <h1 class="rise" style="--d:1">Andaleeb <span>Dawar</span></h1>
+        <p class="role rise" style="--d:2">Software Engineering Student</p>
+        <p class="tagline rise" style="--d:2">Build the future with code.</p>
+        <p class="bio muted rise" style="--d:3">I'm a Software Engineering student at AWKUM, passionate about building modern web applications, solving real problems, and growing into a professional software engineer.</p>
+
+        <div class="btns rise" style="--d:4">
+          <a class="btn btn--blue" href="#projects">View My Projects <svg class="ic"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn--line" href="#contact"><svg class="ic"><use href="#i-mail"/></svg>Contact Me</a>
+        </div>
+
+        <div class="social rise" style="--d:5">
+          <a href="https://github.com/andaleeb-dawar" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg class="ic"><use href="#i-github"/></svg></a>
+          <a href="https://www.linkedin.com/in/andaleeb-khan-bb46993b5" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="ic"><use href="#i-linkedin"/></svg></a>
+          <a href="mailto:andaleebkhan021@gmail.com" aria-label="Email"><svg class="ic"><use href="#i-mail"/></svg></a>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <span class="glow" aria-hidden="true"></span>
+
+        <div class="portrait">
+          <img src="./profile.png" alt="Andaleeb Dawar" width="1102" height="1427" fetchpriority="high" />
+          <span class="status" role="img" tabindex="0" aria-label="Open to Work"><span class="status__tip" aria-hidden="true">Open to Work</span></span>
+        </div>
+
+        <div class="script" aria-hidden="true">
+          <span>Code<br>Build<br>Improve<br>Repeat.</span>
+          <svg viewBox="0 0 120 20"><path d="M2 16C30 6 70 4 118 2" pathLength="1"/></svg>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="wrap">
+      <div class="stats reveal">
+        <div>
+          <span class="ico"><svg class="ic"><use href="#i-layers"/></svg></span>
+          <div><strong data-count="3" data-suffix="+">3+</strong><small>Projects Completed</small></div>
+        </div>
+        <div>
+          <span class="ico"><svg class="ic"><use href="#i-cpu"/></svg></span>
+          <div><strong data-count="8" data-suffix="+">8+</strong><small>Technologies Learned</small></div>
+        </div>
+        <div>
+          <span class="ico"><svg class="ic"><use href="#i-calendar"/></svg></span>
+          <div><strong data-count="7" data-suffix="th">7th</strong><small>Semester (BS SE)</small></div>
+        </div>
+        <div>
+          <span class="ico"><svg class="ic"><use href="#i-award"/></svg></span>
+          <div><strong data-count="3.02" data-dec="2">3.02</strong><small>Current CGPA</small></div>
+        </div>
+        <div>
+          <span class="ico"><svg class="ic"><use href="#i-trend"/></svg></span>
+          <div><strong data-count="100" data-suffix="%">100%</strong><small>Growth Mindset</small></div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="wrap sec" id="about">
+      <div class="about">
+
+        <div class="reveal">
+          <span class="eyebrow">About Me</span>
+          <h2>Who I Am</h2>
+          <p class="muted">I'm Andaleeb Dawar, a Software Engineering student at AWKUM, Mardan. I'm passionate about creating useful web applications and learning new technologies.</p>
+          <p class="muted">I aim to become a professional software engineer, contribute to impactful projects, and work with great teams in the future.</p>
+          <a class="btn btn--line" href="cv.pdf" download="Andaleeb-CV.pdf">Download CV <svg class="ic"><use href="#i-download"/></svg></a>
+        </div>
+
+        <div class="panel info reveal">
+          <div>
+            <span class="ico round"><svg class="ic"><use href="#i-cap"/></svg></span>
+            <p><strong>Education</strong>BS Software Engineering<br>AWKUM, Mardan (7th Semester)</p>
+          </div>
+          <div>
+            <span class="ico round"><svg class="ic"><use href="#i-pin"/></svg></span>
+            <p><strong>Location</strong>Mardan, KPK, Pakistan</p>
+          </div>
+          <div>
+            <span class="ico round"><svg class="ic"><use href="#i-mail"/></svg></span>
+            <p><strong>Email</strong>andaleebkhan021@gmail.com</p>
+          </div>
+          <div>
+            <span class="ico round"><svg class="ic"><use href="#i-target"/></svg></span>
+            <p><strong>Goal</strong>Become a Professional Software Engineer</p>
+          </div>
+        </div>
+
+        <blockquote class="panel quote reveal">
+          <svg class="ic"><use href="#i-quote"/></svg>
+          <p>“Better Code Better Tomorrow”</p>
+          <span></span>
+        </blockquote>
+
+      </div>
+    </section>
+
+
+    <section class="wrap sec" id="skills">
+      <div class="head reveal">
+        <span class="eyebrow">My Skills</span>
+        <h2>My Skills</h2>
+        <p class="muted">Technologies and tools I work with.</p>
+      </div>
+
+      <div class="tiles">
+        <div class="tile reveal"><svg class="bi"><use href="#b-html"/></svg>HTML</div>
+        <div class="tile reveal"><svg class="bi"><use href="#b-css"/></svg>CSS</div>
+        <div class="tile reveal"><svg class="bi"><use href="#b-js"/></svg>JavaScript</div>
+        <div class="tile reveal"><svg class="bi"><use href="#b-py"/></svg>Python</div>
+        <div class="tile reveal"><svg class="bi"><use href="#b-react"/></svg>React</div>
+        <div class="tile reveal"><svg class="bi"><use href="#b-next"/></svg>Next.js</div>
+        <div class="tile reveal"><svg class="bi"><use href="#b-tw"/></svg>Tailwind CSS</div>
+        <div class="tile reveal"><svg class="bi"><use href="#b-node"/></svg>Node.js</div>
+        <div class="tile reveal"><svg class="bi"><use href="#b-ex"/></svg>Express.js</div>
+        <div class="tile reveal"><svg class="bi"><use href="#b-mongo"/></svg>MongoDB</div>
+        <a class="tile reveal" href="https://github.com/andaleeb-dawar" target="_blank" rel="noopener noreferrer" aria-label="Visit Andaleeb Dawar on GitHub"><svg class="bi"><use href="#i-github"/></svg>Git &amp; GitHub</a>
+        <div class="tile reveal"><svg class="bi"><use href="#b-vs"/></svg>VS Code</div>
+      </div>
+    </section>
+
+
+    <section class="wrap sec" id="projects">
+      <div class="head head--row reveal">
+        <div>
+          <span class="eyebrow">Projects</span>
+          <h2>My Projects</h2>
+          <p class="muted">Some of the projects I've built with passion.</p>
+        </div>
+        <a class="link" href="https://github.com/andaleeb-dawar" target="_blank" rel="noopener noreferrer">View All Projects <svg class="ic"><use href="#i-arrow"/></svg></a>
+      </div>
+
+      <div class="cards">
+
+        <article class="pj reveal">
+          <div class="shot">
+            <div class="app">
+              <div class="cols">
+                <div><b></b><b></b></div>
+                <div><b></b><b></b><b></b></div>
+                <div><b></b></div>
+              </div>
+            </div>
+          </div>
+          <div class="pj__body">
+            <span class="pill">Web App</span>
+            <h3>Orbit Task</h3>
+            <p class="muted">A modern task management app with Kanban, drag &amp; drop and dark mode.</p>
+            <div class="pj__links">
+              <span><svg class="ic"><use href="#i-loader"/></svg>In Progress</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="pj reveal">
+          <div class="shot">
+            <div class="app">
+              <div class="hero2"></div>
+              <div class="grid2"><b></b><b></b><b></b><b></b></div>
+            </div>
+          </div>
+          <div class="pj__body">
+            <span class="pill">Web App</span>
+            <h3>E-Commerce (Coming Soon)</h3>
+            <p class="muted">A full stack e-commerce platform with payment integration and admin panel.</p>
+            <div class="pj__links">
+              <span><svg class="ic"><use href="#i-loader"/></svg>In Progress</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="pj reveal">
+          <div class="shot">
+            <img src="./rest-api-project.png" alt="REST API Service dashboard showing endpoint and authentication overview" width="1440" height="520" loading="lazy" />
+          </div>
+          <div class="pj__body">
+            <span class="pill">REST API</span>
+            <h3>REST API Service</h3>
+            <p class="muted">Node.js and Express API with JWT authentication, role-based access, validation, rate limiting, and paginated CRUD.</p>
+            <div class="pj__links">
+              <a href="https://github.com/andaleeb-dawar/rest-api-project" target="_blank" rel="noopener noreferrer"><svg class="ic"><use href="#i-github"/></svg>GitHub</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+
+    <section class="wrap sec" id="experience">
+      <h2 class="sr-only">Experience and Contact</h2>
+      <div class="trio">
+
+        <div class="reveal">
+          <h3 class="title"><svg class="ic"><use href="#i-lines"/></svg>Experience &amp; Education</h3>
+          <ol class="timeline">
+            <li>
+              <small>2026 – Present</small>
+              <strong>BS Software Engineering</strong>
+              <span class="muted">Abdul Wali Khan University Mardan (AWKUM)</span>
+            </li>
+            <li>
+              <small>2021 – 2023</small>
+              <strong>FSC Pre-Engineering</strong>
+            <span class="muted">The Crescent College North Waziristan</span>
+            </li>
+          </ol>
+        </div>
+
+        <div class="reveal">
+          <h3 class="title">What I'm Learning</h3>
+          <ul class="checks">
+            <li><svg class="ic"><use href="#i-check"/></svg>Web Development (HTML, CSS, JS)</li>
+            <li><svg class="ic"><use href="#i-check"/></svg>Backend with Node.js &amp; Express</li>
+            <li><svg class="ic"><use href="#i-check"/></svg>Database Management (MongoDB)</li>
+            <li><svg class="ic"><use href="#i-check"/></svg>System Design &amp; DSA</li>
+            <li><svg class="ic"><use href="#i-check"/></svg>Professional Communication</li>
+          </ul>
+        </div>
+
+        <div class="panel work reveal" id="contact">
+          <div class="work__top">
+            <span class="ico"><svg class="ic"><use href="#i-brief"/></svg></span>
+            <h3>Let's Work Together</h3>
+          </div>
+          <p class="muted">I'm open to collaborations, internships and freelance opportunities. Feel free to reach out!</p>
+          <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="4dd5599d-af73-410c-bf96-42e54529388e" />
+            <input type="hidden" name="from_name" value="Andaleeb Dawar Portfolio" />
+            <input class="contact-form__honeypot" type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+            <div class="form-field">
+              <label for="contactName">Your name</label>
+              <input id="contactName" name="name" type="text" autocomplete="name" maxlength="100" placeholder="e.g. Ab Dawar" required />
+            </div>
+
+            <div class="form-field">
+              <label for="contactEmail">Your email</label>
+              <input id="contactEmail" name="email" type="email" autocomplete="email" maxlength="254" placeholder="you@example.com" required />
+            </div>
+
+            <div class="form-field form-field--wide">
+              <label for="contactSubject">Subject</label>
+              <input id="contactSubject" name="subject" type="text" maxlength="150" placeholder="Project inquiry or collaboration" required />
+            </div>
+
+            <div class="form-field form-field--wide">
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" name="message" rows="4" maxlength="5000" placeholder="Tell me a little about what you have in mind..." required></textarea>
+            </div>
+
+            <div class="contact-form__actions">
+              <button class="btn btn--blue" id="contactSubmitButton" type="submit"><span id="contactSubmitLabel">Send Message</span> <svg class="ic"><use href="#i-send"/></svg></button>
+              <a class="contact-form__fallback" id="contactEmailFallback" href="mailto:andaleebkhan021@gmail.com">Send using your email app</a>
+            </div>
+            <p class="contact-form__note">Send a message directly to my inbox. Your email address will be used for my reply.</p>
+            <p class="contact-form__status" id="contactFormStatus" role="status" aria-live="polite" aria-atomic="true"></p>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="foot">
+    <div class="wrap">
+      <div class="foot__row">
+
+        <div class="foot__me">
+          <span class="logo">AD</span>
+          <p><strong>Andaleeb Dawar</strong><small>Software Engineering Student</small></p>
+        </div>
+
+        <nav class="foot__nav" aria-label="Footer navigation">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="social">
+          <a href="https://github.com/andaleeb-dawar" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg class="ic"><use href="#i-github"/></svg></a>
+          <a href="https://www.linkedin.com/in/andaleeb-khan-bb46993b5" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="ic"><use href="#i-linkedin"/></svg></a>
+          <a href="mailto:andaleebkhan021@gmail.com" aria-label="Email"><svg class="ic"><use href="#i-mail"/></svg></a>
+        </div>
+
+      </div>
+
+      <div class="foot__bar">
+        <p>© <span id="year">2026</span> Andaleeb Dawar. All rights reserved.</p>
+        <p>Build • Learn • Grow</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="contact-form.js"></script>
+</body>
+</html>
